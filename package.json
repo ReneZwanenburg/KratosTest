@@ -1,0 +1,13 @@
+{
+	"name": "KratosTest",
+	"copyright": "Copyright © 2014, René Zwanenburg",
+	"authors": [
+		"René Zwanenburg"
+	],
+
+	"targetPath": "build",
+
+	"dependencies": {
+		"kratos": { "version": "~master", "path": "../Kratos" }
+	}
+}
