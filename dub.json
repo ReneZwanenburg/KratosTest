@@ -6,6 +6,12 @@
 	],
 
 	"targetPath": "build",
+	"workingDirectory": "build",
+
+	"preBuildCommands":
+	[
+		"..\\KratosAssetPacker\\kratosassetpacker"
+	],
 
 	"dependencies": {
 		"kratos": { "version": "~master", "path": "../Kratos" }
