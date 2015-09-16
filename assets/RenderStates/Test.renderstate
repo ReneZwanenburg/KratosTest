@@ -1,0 +1,12 @@
+{
+	"Shader":
+	{
+		"program": "ShaderPrograms/Test.prog",
+		
+		"uniforms":
+		{
+			"texture":	"Textures/sci_fi_metal_floor.png",
+			"color": [1, 1, 1]
+		}
+	}
+}
