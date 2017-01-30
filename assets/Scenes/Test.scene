@@ -1,8 +1,20 @@
 {
 	"name": "Test Scene",
+	
+	"components": [
+		{
+			"type": "kratos.component.physics.PhysicsWorld",
+			"representation": {
+				"stepSize": 0.05,
+				"gravity": [0, -9.81, 0]
+			}
+		}
+	],
+	
 	"entities": [
-		"Entities/Test.entity",
-		"Entities/Camera.entity",
+		"Entities/Test",
+		"Entities/Camera",
+		"Entities/Floor",
 		
 		{
 			"name": "Embedded Entity",
@@ -17,8 +29,8 @@
 				{
 					"type": "kratos.component.meshrenderer.MeshRenderer",
 					"representation": {
-						"mesh": "Meshes/Box.obj",
-						"renderState": "RenderStates/Test.renderstate"
+						"mesh": "Meshes/Box",
+						"renderState": "RenderStates/Test"
 					}
 				}
 			]

@@ -2,13 +2,14 @@ import kratos;
 
 import std.math;
 
+import kratos.input;
+import kratos.component.physics;
 import kratos.component.meshrenderer;
 import kratos.component.time;
 
 import kratos.ecs.entity;
 import kratos.ecs.component : optional, ignore, dependency;
 import kratos.graphics.shadervariable : UniformRef;
-import kratos.time;
 
 import kgl3n.vector;
 
@@ -39,7 +40,22 @@ public class Flashy : Component
 	}
 }
 
+public class Thruster : Component
+{
+	private @dependency RigidBody rigidBody;
+	public vec3 force;
+	
+	void frameUpdate()
+	{
+		if(keyboard["Space"].pressed)
+		{
+			rigidBody.addForce(force);
+		}
+	}
+}
+
 static this()
 {
 	registerComponent!Flashy;
+	registerComponent!Thruster;
 }

@@ -1,0 +1,20 @@
+{
+	"components":
+	[
+		{
+			"type": "kratos.component.transform.Transform",
+			"representation":
+			{
+				"position": [0, -15, 0]
+			}
+		},
+		
+		{
+			"type": "kratos.component.physics.CollisionBox",
+			"representation":
+			{
+				"extent": [10, 1, 10]
+			}
+		}
+	]
+}
